@@ -41,6 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:padding="15dp"
+            android:textColor="@color/black"
             android:background="@drawable/rounded_edittext"
             android:hint="Email address or user name"
             />
@@ -51,6 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:padding="15dp"
+            android:textColor="@color/black"
             android:background="@drawable/rounded_edittext"
             android:inputType="textPassword"
             android:hint="Password"

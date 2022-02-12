@@ -13,9 +13,4 @@ public class CreateProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create_profile);
     }
 
-    public void onRadioGender(View view) {
-    }
-
-    public void onRadioActivity(View view) {
-    }
 }

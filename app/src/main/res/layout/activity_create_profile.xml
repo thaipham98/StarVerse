@@ -9,16 +9,16 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_gravity="center"
         android:gravity="center"
         android:orientation="vertical"
 
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHeight_default="percent"
         app:layout_constraintHeight_percent="0.4"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -43,8 +43,8 @@
 
 
         <com.mikhaellopez.circularimageview.CircularImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
             android:src="@drawable/profile_taurus2"
             app:civ_border_color="#3f51b5"
             app:civ_border_width="4dp"
@@ -62,11 +62,11 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_gravity="center"
-        android:gravity="center"
+        android:layout_gravity="left"
+        android:gravity="left"
         android:orientation="vertical"
         android:background="@drawable/rounded_corner"
 
@@ -77,104 +77,159 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" >
+        app:layout_constraintVertical_bias="0.8" >
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="horizontal"
             android:paddingLeft="15dp"
             android:paddingTop="15dp"
             android:paddingRight="15dp"
-            android:paddingBottom="0dp"
-            android:gravity="center">
+            android:paddingBottom="0dp">
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
                 android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:gravity="center">
+                android:paddingRight="10dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
                     android:fontFamily="@font/simonetta"
                     android:text="I am interested in: "
-                    />
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
 
-                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                <RadioGroup
+                    android:id="@+id/radio_gender"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-                    <RadioButton android:id="@+id/radio_pirates"
+
+                    <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/simonetta"
-                        android:textSize="20dp"
+                        android:layout_marginTop="0dp"
                         android:background="@drawable/radio_group_selector"
+                        android:fontFamily="@font/simonetta"
                         android:text="Female"
-                        android:onClick="onRadioButtonClicked"/>
-                    <RadioButton android:id="@+id/radio_ninjas"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_pirates"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/simonetta"
-                        android:textSize="20dp"
+                        android:layout_marginTop="-10dp"
                         android:background="@drawable/radio_group_selector"
+                        android:fontFamily="@font/simonetta"
                         android:text="Male"
-                        android:onClick="onRadioButtonClicked"/>
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
                 </RadioGroup>
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
                 android:gravity="left"
-                >
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
                     android:fontFamily="@font/simonetta"
                     android:text="I am looking for:"
-                    />
-                <RadioButton android:id="@+id/radio_gender"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:textColor="@color/white"
-                    android:fontFamily="@font/simonetta"
-                    android:textSize="20dp"
-                    android:background="@drawable/radio_group_selector"
-                    android:text="Hangout"
-                    android:onClick="onRadioGender"/>
+                    android:textSize="20dp" />
 
-                <RadioButton android:id="@+id/radio_activity"
-                    android:layout_width="wrap_content"
+                <RadioGroup
+                    android:id="@+id/radio_activity"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/simonetta"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    android:background="@drawable/radio_group_selector"
-                    android:text="Date"
-                    android:onClick="onRadioActivity"/>
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/radio_group_selector"
+                        android:fontFamily="@font/simonetta"
+                        android:text="Hangout"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-10dp"
+                        android:background="@drawable/radio_group_selector"
+                        android:fontFamily="@font/simonetta"
+                        android:text="Date"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+                </RadioGroup>
             </LinearLayout>
+
 
         </LinearLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/simonetta"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:text="The age range I'm looking for: "
+            />
 
+        <com.google.android.material.slider.RangeSlider
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:stepSize="1"
+            android:valueFrom="0.0"
+            android:valueTo="100.0"
+            app:values="@array/initial_slider_values" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/simonetta"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:text="About me: "
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_3_edittext"
+            android:hint="Write something"
+            />
 
 
 
@@ -190,6 +245,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95" />
+        app:layout_constraintVertical_bias="0.99" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
