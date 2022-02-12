@@ -6,9 +6,11 @@
         <entry key="..\:/Users/giath/AndroidStudioProjects/StarVerse2/app/src/main/res/layout/activity_main.xml" value="0.40217391304347827" />
         <entry key="app/src/main/res/drawable/circle.xml" value="0.1095" />
         <entry key="app/src/main/res/drawable/img.xml" value="0.1095" />
+        <entry key="app/src/main/res/drawable/radio_group_selector.xml" value="0.147" />
         <entry key="app/src/main/res/drawable/rounded_corner.xml" value="0.1425" />
         <entry key="app/src/main/res/drawable/rounded_edittext.xml" value="0.1425" />
         <entry key="app/src/main/res/font/font.xml" value="0.2512820512820513" />
+        <entry key="app/src/main/res/layout/activity_create_profile.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_dob.xml" value="0.225" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.21" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.225" />
