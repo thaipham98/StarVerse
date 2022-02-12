@@ -14,22 +14,21 @@ import com.example.starverse.Entities.Credential;
 
 public class Login extends AppCompatActivity {
 
-    EditText username, email, password;
+    EditText email, password;
     Button login;
 
     @Override
     protected void onCreate(Bundle savedIntanceState) {
         super.onCreate(savedIntanceState);
         setContentView(R.layout.login_main);
-        username = findViewById(R.id.username);
-        password = findViewById(R.id.password);
         email = findViewById(R.id.email);
+        password = findViewById(R.id.password);
         login = findViewById(R.id.login);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String usernameText = username.getText().toString();
+                final String usernameText = email.getText().toString();
                 final String passwordText = password.getText().toString();
 
                 if (usernameText.isEmpty() || passwordText.isEmpty()) {
