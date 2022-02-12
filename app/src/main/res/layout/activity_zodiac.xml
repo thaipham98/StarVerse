@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".ProfileActivity">
+    tools:context=".ZodiacActivity">
 
     <!-- place holder image. TODO: update this in java file-->
 
@@ -91,8 +91,10 @@
         android:paddingTop="15dp"
         android:paddingRight="15dp"
         android:paddingBottom="10dp"
+        android:scrollbars = "vertical"
         android:text="Taurus description here"
         android:textColor="@android:color/white"
+
         app:layout_constraintHeight_default="percent"
         app:layout_constraintHeight_percent="0.5"
 

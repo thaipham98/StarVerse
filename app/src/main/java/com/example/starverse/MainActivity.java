@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openProfilePage(View view) {
-        Intent i = new Intent(this, ProfileActivity.class);
+        Intent i = new Intent(this, ZodiacActivity.class);
         startActivity(i);
     }
 

@@ -19,7 +19,7 @@
             android:name=".SigninActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".ZodiacActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
