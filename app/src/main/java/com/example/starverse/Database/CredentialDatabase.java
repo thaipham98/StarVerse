@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase;
 import com.example.starverse.Dao.CredentialDao;
 import com.example.starverse.Entities.Credential;
 
-@androidx.room.Database(entities = {Credential.class}, version = 1)
+@androidx.room.Database(entities = {Credential.class}, version = 3)
 public abstract class CredentialDatabase extends RoomDatabase {
 
     private static final String dbName = "test";

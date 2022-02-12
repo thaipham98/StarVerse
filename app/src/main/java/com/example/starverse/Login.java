@@ -28,10 +28,10 @@ public class Login extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String usernameText = email.getText().toString();
+                final String emailText = email.getText().toString();
                 final String passwordText = password.getText().toString();
 
-                if (usernameText.isEmpty() || passwordText.isEmpty()) {
+                if (emailText.isEmpty() || passwordText.isEmpty()) {
                     Toast.makeText(getApplicationContext(), "Fill all Fields", Toast.LENGTH_SHORT).show();
                 } else {
                     CredentialDatabase credentialDatabase = CredentialDatabase.getCredentialDatabase(getApplicationContext());
@@ -39,7 +39,7 @@ public class Login extends AppCompatActivity {
                     new Thread(new Runnable() {
                         @Override
                         public void run() {
-                            Credential credential = credentialDao.signIn(usernameText, passwordText);
+                            Credential credential = credentialDao.signIn(emailText, passwordText);
                             if (credential == null) {
                                 runOnUiThread(new Runnable() {
                                     @Override

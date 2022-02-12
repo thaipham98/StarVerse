@@ -12,7 +12,7 @@ import lombok.NonNull;
 @AllArgsConstructor
 @Builder
 @Getter
-@Entity(tableName = "credential")
+@Entity(tableName = "Credentials")
 public class Credential {
 
     @PrimaryKey(autoGenerate = false)

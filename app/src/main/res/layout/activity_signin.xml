@@ -65,7 +65,8 @@
             android:layout_alignParentEnd="true"
             android:background="@drawable/rounded_edittext"
             android:text="Sign in"
-            android:textSize="15dp"  />
+            android:textSize="15dp"
+            />
 
     </LinearLayout>
 

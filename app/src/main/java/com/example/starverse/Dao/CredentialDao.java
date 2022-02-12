@@ -12,6 +12,6 @@ public interface CredentialDao {
     @Insert
     void signUp(Credential credential);
 
-    @Query("select * from credential where username = :username and password = :password")
+    @Query("select * from Credentials where username = :username and password = :password")
     Credential signIn(String username, String password);
 }
