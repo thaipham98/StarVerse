@@ -109,6 +109,7 @@
         app:layout_constraintLeft_toLeftOf="@id/main_text4"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89" />
+        app:layout_constraintVertical_bias="0.89"
+        android:onClick="openSigninPage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

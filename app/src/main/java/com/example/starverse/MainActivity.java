@@ -18,4 +18,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, ProfileActivity.class);
         startActivity(i);
     }
+
+    public void openSigninPage(View view) {
+        Intent i = new Intent(this, SigninActivity.class);
+        startActivity(i);
+    }
 }
