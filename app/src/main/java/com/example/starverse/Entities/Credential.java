@@ -16,8 +16,8 @@ import lombok.NonNull;
 public class Credential {
 
     @PrimaryKey(autoGenerate = false)
-    @NonNull
     @ColumnInfo(name = "username")
+    @androidx.annotation.NonNull
     private String username;
 
     public String getUsername() {
