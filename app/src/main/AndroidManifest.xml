@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StarVerse">
         <activity
+            android:name=".SigninActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DOBActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
