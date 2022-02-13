@@ -160,11 +160,14 @@
         >
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/navDashBoard"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@android:color/transparent"
-            android:text="Login" />
+            android:text="Dashboard"
+            android:onClick="openDashBoardPage"
+            />
 
         <View
             android:layout_width="1dp"
@@ -172,11 +175,13 @@
             android:background="@android:color/white" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/navChathub"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@android:color/transparent"
-            android:text="Login" />
+            android:text="Chat hub"
+            android:onClick="openChathubPage"/>
 
         <View
             android:layout_width="1dp"
@@ -184,11 +189,13 @@
             android:background="@android:color/white" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/navProfile"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@android:color/transparent"
-            android:text="Sign Up" />
+            android:text="My Profile"
+            android:onClick="openMyProfilePage"/>
 
     </LinearLayout>
 

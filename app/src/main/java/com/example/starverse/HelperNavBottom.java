@@ -1,19 +1,11 @@
 package com.example.starverse;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 
-public class DashboardActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
-    }
+public class HelperNavBottom extends AppCompatActivity {
 
     public void openDashBoardPage(View view) {
         Intent i = new Intent(this, DashboardActivity.class);
@@ -29,4 +21,5 @@ public class DashboardActivity extends AppCompatActivity {
         Intent i = new Intent(this, MyProfileActivity.class);
         startActivity(i);
     }
+
 }
