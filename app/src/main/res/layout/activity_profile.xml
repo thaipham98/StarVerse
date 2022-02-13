@@ -91,8 +91,39 @@
         android:paddingTop="15dp"
         android:paddingRight="15dp"
         android:paddingBottom="10dp"
-        android:text="Taurus description here"
+        android:scrollbars = "vertical"
+        android:text="Taurus are most compatible with other Earth signs - Virgo and Capricorn, or Water signs - Cancer, Pisces, Scorpio.
+Ruling planet: Venus
+Element: Earth
+Zodiac symbol: The Bull
+Known for their stubborn nature, it's only fitting those falling under the Taurus sign
+
+
+
+ are ... Read more
+
+
+
+ represented by a bull glyph.
+These horns are said to represent extra sensory appendages of the bull, as Taureans are more in
+
+
+ touch with their senses than any other sign in the zodiac.
+
+
+Grounded in hard work, slow and steady perseverance and security, the bull is the persistent provider of the zodiac.
+
+Taurus is ruled by Venus - the planet of love, beauty, and money, making them the most sensual sign of the zodiac.
+
+They enjoy indulgences, luxuries and physical pleasures, and feel most content when pampered.
+
+Steadfast and loyal, Taureans make for a steady, harmonious relationship.
+
+They are most compatible with other Earth signs - Virgo and Capricorn, or Water signs - Cancer, Pisces, Scorpio.
+
+"
         android:textColor="@android:color/white"
+
         app:layout_constraintHeight_default="percent"
         app:layout_constraintHeight_percent="0.5"
 

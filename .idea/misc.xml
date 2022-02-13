@@ -6,15 +6,28 @@
         <entry key="..\:/Users/giath/AndroidStudioProjects/StarVerse/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/giath/AndroidStudioProjects/StarVerse2/app/src/main/res/layout/activity_main.xml" value="0.40217391304347827" />
         <entry key="app/src/main/res/drawable/circle.xml" value="0.1095" />
+        <entry key="app/src/main/res/drawable/ic_icon_search.xml" value="0.105" />
         <entry key="app/src/main/res/drawable/img.xml" value="0.1095" />
+        <entry key="app/src/main/res/drawable/radio_group_selector.xml" value="0.147" />
+        <entry key="app/src/main/res/drawable/rounded_3_edittext.xml" value="0.147" />
         <entry key="app/src/main/res/drawable/rounded_corner.xml" value="0.1425" />
         <entry key="app/src/main/res/drawable/rounded_edittext.xml" value="0.1425" />
+        <entry key="app/src/main/res/drawable/rounded_transparent_edittext.xml" value="0.105" />
         <entry key="app/src/main/res/font/font.xml" value="0.2512820512820513" />
+        <entry key="app/src/main/res/layout/activity_create_profile.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.2033514492753623" />
         <entry key="app/src/main/res/layout/activity_dob.xml" value="0.225" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.21" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.225" />
         <entry key="app/src/main/res/layout/activity_signin.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.19067028985507245" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/bottm_navigation_layout.xml" value="0.178125" />
+        <entry key="app/src/main/res/layout/bottom_navigation.xml" value="0.2033514492753623" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2033514492753623" />
+        <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.2033514492753623" />
+        <entry key="app/src/main/res/layout/item_koloda.xml" value="0.16875" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.2453125" />
+        <entry key="app/src/main/res/menu/options_menu.xml" value="0.21875" />
       </map>
     </option>
   </component>

@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StarVerse">
         <activity
+            android:name=".BottomNavigation"
+            android:exported="false"
+            android:label="@string/title_activity_bottom_navigation" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".SignupActivity"
             android:exported="false" />
         <activity

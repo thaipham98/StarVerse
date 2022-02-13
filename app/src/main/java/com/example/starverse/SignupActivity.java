@@ -18,4 +18,10 @@ public class SignupActivity extends AppCompatActivity {
         Intent i = new Intent(this, SigninActivity.class);
         startActivity(i);
     }
+
+    public void openCreateProfilePage(View view) {
+        Intent i = new Intent(this, CreateProfileActivity.class);
+        startActivity(i);
+    }
+
 }
