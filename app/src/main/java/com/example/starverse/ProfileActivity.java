@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class ProfileActivity extends AppCompatActivity {
 
@@ -12,6 +13,10 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+        TextView zodiac_name = findViewById(R.id.profile_text_zodiac);
+        zodiac_name.setText("Yosyewghselhgv se");
+
+//        horoscopeName = findViewById(R.id.)
     }
 
     public void openSignupPage(View view) {
