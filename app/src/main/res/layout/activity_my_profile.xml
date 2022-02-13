@@ -97,6 +97,7 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/book_icon"
             android:background="@drawable/rounded_corner"
             android:layout_margin="15dp"
             android:paddingStart="15dp"
@@ -105,13 +106,14 @@
             android:paddingBottom="10dp"
             android:fontFamily="@font/simonetta"
             android:textColor="@color/white"
-            android:text="Learn about your zodiac sign"
+            android:text="  Learn about your zodiac sign"
             android:textSize="25sp"
             />
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/help_icon"
             android:background="@drawable/rounded_corner"
             android:layout_margin="15dp"
             android:paddingStart="15dp"
@@ -120,13 +122,14 @@
             android:paddingBottom="10dp"
             android:fontFamily="@font/simonetta"
             android:textColor="@color/white"
-            android:text="Help"
+            android:text="  Help"
             android:textSize="25sp"
             />
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/sign_out_icon"
             android:background="@drawable/rounded_corner"
             android:layout_margin="15dp"
             android:paddingStart="15dp"
@@ -135,7 +138,7 @@
             android:paddingBottom="10dp"
             android:fontFamily="@font/simonetta"
             android:textColor="@color/white"
-            android:text="Sign out"
+            android:text="  Sign out"
             android:textSize="25sp"
             />
 
