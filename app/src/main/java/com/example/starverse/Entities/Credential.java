@@ -4,9 +4,6 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
 import lombok.NonNull;
 
 
@@ -18,6 +15,13 @@ public class Credential {
     @PrimaryKey(autoGenerate = false)
     @ColumnInfo(name = "username")
     private String username;
+
+    public Credential(String username, String email, String password) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
+    }
+
 
     public String getUsername() {
         return username;
@@ -44,6 +48,7 @@ public class Credential {
     }
 
     @ColumnInfo(name = "email")
+    @NonNull
     private String email;
 
     @ColumnInfo(name = "password")
