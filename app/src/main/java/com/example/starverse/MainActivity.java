@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         DatabaseHandler databaseHandler = new DatabaseHandler(getApplicationContext());
 
         DOB = findViewById(R.id.main_datePicker1);
-        start_button = findViewById(R.id.main_button1);
+        start_button = findViewById(R.id.start);
 
         start_button.setOnClickListener(new View.OnClickListener() {
             @Override

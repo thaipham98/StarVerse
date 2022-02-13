@@ -68,9 +68,10 @@
 
     <!--        TODO: onclick here for button -->
     <Button
-        android:id="@+id/main_button1"
+        android:id="@+id/start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
         android:text="Let's get started"
         android:onClick="openProfilePage"
         app:layout_constraintBottom_toBottomOf="parent"

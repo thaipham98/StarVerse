@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
@@ -17,6 +18,8 @@ public class ProfileActivity extends AppCompatActivity {
         zodiac_name.setText("Yosyewghselhgv se");
 
 //        horoscopeName = findViewById(R.id.)
+        TextView profile_text_description = findViewById(R.id.profile_text_description);
+        profile_text_description.setMovementMethod(new ScrollingMovementMethod());
     }
 
     public void openSignupPage(View view) {
