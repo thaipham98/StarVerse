@@ -33,7 +33,7 @@
 
         android:orientation="horizontal"
 
-        android:background="@drawable/rounded_corner_green"
+        android:background="@drawable/rounded_corner_yellow"
         android:color="#41B045
 "
 
@@ -55,7 +55,7 @@
         <com.mikhaellopez.circularimageview.CircularImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/icon_taurus"
+            android:src="@drawable/icon_cancer"
             app:civ_border_color="#41B045"
             app:civ_border_width="0dp"
             app:civ_shadow="true"
@@ -76,7 +76,7 @@
                 android:padding="5dp"
                 android:textColor="@color/white"
                 android:textSize="30dp"
-                android:text="Micheal Jordan"
+                android:text="Kyrie Irving"
                 />
 
             <TextView
@@ -90,9 +90,6 @@
                 />
 
         </LinearLayout>
-
-
-
 
     </LinearLayout>
 
