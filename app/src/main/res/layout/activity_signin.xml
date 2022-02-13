@@ -69,6 +69,8 @@
             android:text="Sign in"
             android:textSize="15dp"
             android:onClick="openDashBoard"/>
+            android:textSize="15dp"
+            />
 
     </LinearLayout>
 

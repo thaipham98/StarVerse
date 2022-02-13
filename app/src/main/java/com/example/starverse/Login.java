@@ -1,11 +1,6 @@
 package com.example.starverse;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,7 +12,7 @@ import com.example.starverse.Dao.CredentialDao;
 import com.example.starverse.Database.CredentialDatabase;
 import com.example.starverse.Entities.Credential;
 
-public class SigninActivity extends AppCompatActivity {
+public class Login extends AppCompatActivity {
 
     EditText email, password;
     Button login;
@@ -26,7 +21,6 @@ public class SigninActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedIntanceState) {
         super.onCreate(savedIntanceState);
         setContentView(R.layout.activity_signin);
-
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         login = findViewById(R.id.login);
@@ -34,10 +28,10 @@ public class SigninActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String email = SigninActivity.this.email.getText().toString();
+                final String emailText = email.getText().toString();
                 final String passwordText = password.getText().toString();
 
-                if (email.isEmpty() || passwordText.isEmpty()) {
+                if (emailText.isEmpty() || passwordText.isEmpty()) {
                     Toast.makeText(getApplicationContext(), "Fill all Fields", Toast.LENGTH_SHORT).show();
                 } else {
                     CredentialDatabase credentialDatabase = CredentialDatabase.getCredentialDatabase(getApplicationContext());
@@ -45,7 +39,7 @@ public class SigninActivity extends AppCompatActivity {
                     new Thread(new Runnable() {
                         @Override
                         public void run() {
-                            Credential credential = credentialDao.signIn(email, passwordText);
+                            Credential credential = credentialDao.signIn(emailText, passwordText);
                             if (credential == null) {
                                 runOnUiThread(new Runnable() {
                                     @Override
@@ -54,10 +48,6 @@ public class SigninActivity extends AppCompatActivity {
                                     }
                                 });
                             } else {
-                                System.out.println("got");
-                                openDashBoard(v);
-
-
 
 
                             }
@@ -69,11 +59,4 @@ public class SigninActivity extends AppCompatActivity {
         });
 
     }
-
-    public void openDashBoard(View view) {
-        Intent i = new Intent(this, DashboardActivity.class);
-        startActivity(i);
-    }
-
-
 }

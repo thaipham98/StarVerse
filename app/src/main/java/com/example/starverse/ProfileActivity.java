@@ -14,6 +14,10 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+        TextView zodiac_name = findViewById(R.id.profile_text_zodiac);
+        zodiac_name.setText("Yosyewghselhgv se");
+
+//        horoscopeName = findViewById(R.id.)
         TextView profile_text_description = findViewById(R.id.profile_text_description);
         profile_text_description.setMovementMethod(new ScrollingMovementMethod());
     }
