@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:layout_gravity="center"
-    app:cardElevation="5dp"
+    app:cardElevation="0dp"
     app:cardCornerRadius="15dp">
 
     <androidx.cardview.widget.CardView
@@ -90,7 +90,7 @@
 
                     <Space
                         android:layout_width="match_parent"
-                        android:layout_height="10dp"
+                        android:layout_height="10dp"></Space>
 
                     <ImageView
                         android:layout_width="match_parent"
