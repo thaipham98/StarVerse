@@ -1,6 +1,5 @@
 package com.example.starverse;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,8 +7,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.starverse.Dao.CredentialDao;
-import com.example.starverse.Database.CredentialDatabase;
+import com.example.starverse.Database.MyRoomDB;
 import com.example.starverse.Entities.Credential;
 
 
@@ -39,13 +40,14 @@ public class SignupActivity extends AppCompatActivity {
                 if (emailText.isEmpty() || passwordText.isEmpty()) {
                     Toast.makeText(getApplicationContext(), "Fill all Fields", Toast.LENGTH_SHORT).show();
                 } else {
-                    CredentialDatabase credentialDatabase = CredentialDatabase.getCredentialDatabase(getApplicationContext());
-                    final CredentialDao credentialDao = credentialDatabase.credentialDao();
+                    MyRoomDB myRoomDB = MyRoomDB.getMyRoomDB(getApplicationContext());
+                    final CredentialDao credentialDao = myRoomDB.credentialDao();
                     new Thread(new Runnable() {
                         @Override
                         public void run() {
                             Credential credential = new Credential(usernameText, emailText, passwordText);
                             credentialDao.signUp(credential);
+                            credential = credentialDao.signIn(emailText, passwordText);
                             if (credential == null) {
                                 runOnUiThread(new Runnable() {
                                     @Override
@@ -54,8 +56,10 @@ public class SignupActivity extends AppCompatActivity {
                                     }
                                 });
                             } else {
+
                                 openDashBoard(v);
                             }
+                            myRoomDB.close();
                         }
                     }).start();
                 }
@@ -77,7 +81,4 @@ public class SignupActivity extends AppCompatActivity {
         Intent i = new Intent(this, DashboardActivity.class);
         startActivity(i);
     }
-
-
-
 }

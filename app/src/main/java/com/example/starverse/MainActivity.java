@@ -1,17 +1,16 @@
 package com.example.starverse;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.starverse.Dao.HoroscopeDao;
 import com.example.starverse.Database.DatabaseHandler;
-import com.example.starverse.Database.HoroscopeDatabase;
+import com.example.starverse.Database.MyRoomDB;
 import com.example.starverse.Entities.Horoscope;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
                 final int date_of_birth = DOB.getDayOfMonth();
                 final int month_of_birth = DOB.getMonth() + 1;
 
-                HoroscopeDatabase horoscopeDatabase = HoroscopeDatabase.getHoroscopeDatabase(getApplicationContext());
-                final HoroscopeDao horoscopeDao = horoscopeDatabase.horoscopeDao();
+                MyRoomDB myRoomDB = MyRoomDB.getMyRoomDB(getApplicationContext());
+                final HoroscopeDao horoscopeDao = myRoomDB.horoscopeDao();
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
@@ -50,11 +49,11 @@ public class MainActivity extends AppCompatActivity {
                         } else {
                             openProfilePage(view);
                         }
+                        myRoomDB.close();
                     }
                 }).start();
             }
         });
-
     }
 
 
