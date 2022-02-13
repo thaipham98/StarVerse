@@ -22,4 +22,9 @@ public class HelperNavBottom extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void openChatRegPage(View view){
+        Intent i = new Intent(this, MyProfileActivity.class);
+        startActivity(i);
+    }
+
 }
