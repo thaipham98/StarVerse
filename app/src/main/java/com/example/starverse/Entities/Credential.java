@@ -9,19 +9,30 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NonNull;
 
-@AllArgsConstructor
-@Builder
-@Getter
+
 @Entity(tableName = "Credentials")
 public class Credential {
 
+
+    @androidx.annotation.NonNull
     @PrimaryKey(autoGenerate = false)
     @ColumnInfo(name = "username")
-    @androidx.annotation.NonNull
     private String username;
 
     public String getUsername() {
         return username;
+    }
+
+    public void setUsername(@androidx.annotation.NonNull String username) {
+        this.username = username;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getEmail() {
@@ -33,7 +44,6 @@ public class Credential {
     }
 
     @ColumnInfo(name = "email")
-    @NonNull
     private String email;
 
     @ColumnInfo(name = "password")

@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        DatabaseHandler databaseHandler = new DatabaseHandler(getApplicationContext());
     }
 
     public void openProfilePage(View view) {

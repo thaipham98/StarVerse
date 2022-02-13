@@ -14,18 +14,19 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         database = getWritableDatabase();
     }
 
-    private static final int DATABASE_VERSION = 3;
-    private static final String DATABASE_NAME = "test.db";
-    private static final String TABLE_NAME = "userdata";
+    private static final int DATABASE_VERSION = 13;
+    private static final String DATABASE_NAME = "starverse.db";
+    private static final String TABLE_NAME = "Credentials";
 
-    private static final String COLUMN_ID = "id";
-    private static final String COLUMN_NAME = "name";
-    private static final String COLUMN_COUNTRY = "country";
+    private static final String COLUMN_USERNAME = "username";
+    private static final String COLUMN_EMAIL = "email";
+    private static final String COLUMN_PASSWORD = "password";
 
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        sqLiteDatabase.execSQL("CREATE TABLE " + TABLE_NAME + "(" + COLUMN_ID + " INTEGER PRIMARY KEY, " + COLUMN_NAME + "TEXT, " + COLUMN_COUNTRY + " TEXT)");
+        sqLiteDatabase.execSQL("CREATE TABLE " + TABLE_NAME + "(" + COLUMN_USERNAME + " TEXT PRIMARY KEY NOT NULL, " + COLUMN_EMAIL + " TEXT, " + COLUMN_PASSWORD + " TEXT)");
+        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_NAME + " (" + COLUMN_USERNAME + ", " + COLUMN_EMAIL + ", " + COLUMN_PASSWORD + ")" + " VALUES ('thaipham', 'thaigmail.com', 'abc')");
     }
 
     @Override
