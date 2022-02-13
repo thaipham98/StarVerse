@@ -14,7 +14,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         database = getWritableDatabase();
     }
 
-    private static final int DATABASE_VERSION = 25;
+    private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "starverse.db";
     private static final String TABLE_NAME = "Credentials";
 
@@ -73,9 +73,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
-        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + "Horoscope");
-        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + "Chat_Card");
+//        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
+//        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + "Horoscope");
+//        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + "Chat_Card");
         onCreate(sqLiteDatabase);
     }
 }
