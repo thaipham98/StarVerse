@@ -81,6 +81,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/icon_edit"
+            android:drawablePadding="5dp"
             android:background="@drawable/rounded_corner"
             android:layout_margin="15dp"
             android:paddingStart="15dp"
@@ -89,7 +90,7 @@
             android:paddingBottom="10dp"
             android:fontFamily="@font/simonetta"
             android:textColor="@color/white"
-            android:text="  Edit profile"
+            android:text="Edit profile"
             android:textSize="25sp"
             />
 
