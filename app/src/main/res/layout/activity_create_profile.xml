@@ -107,7 +107,7 @@
                     android:textColor="@color/white"
                     android:textSize="20dp" />
 
-                <RadioGroup
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -116,7 +116,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="0dp"
-                        android:background="@drawable/radio_group_selector"
                         android:fontFamily="@font/simonetta"
                         android:text="Female"
                         android:textColor="@color/white"
@@ -126,7 +125,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="-10dp"
-                        android:background="@drawable/radio_group_selector"
                         android:fontFamily="@font/simonetta"
                         android:text="Male"
                         android:textColor="@color/white"
@@ -151,7 +149,7 @@
                     android:textColor="@color/white"
                     android:textSize="20dp" />
 
-                <RadioGroup
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -160,7 +158,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="0dp"
-                        android:background="@drawable/radio_group_selector"
                         android:fontFamily="@font/simonetta"
                         android:text="Hangout"
                         android:textColor="@color/white"
@@ -170,7 +167,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="-10dp"
-                        android:background="@drawable/radio_group_selector"
                         android:fontFamily="@font/simonetta"
                         android:text="Date"
                         android:textColor="@color/white"
