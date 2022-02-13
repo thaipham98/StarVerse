@@ -106,7 +106,8 @@
             android:paddingBottom="10dp"
             android:fontFamily="@font/simonetta"
             android:textColor="@color/white"
-            android:text="  Learn about your zodiac sign"
+            android:drawablePadding="5dp"
+            android:text="Learn about your zodiac sign"
             android:textSize="25sp"
             />
 
@@ -122,7 +123,8 @@
             android:paddingBottom="10dp"
             android:fontFamily="@font/simonetta"
             android:textColor="@color/white"
-            android:text="  Help"
+            android:drawablePadding="5dp"
+            android:text="Help"
             android:textSize="25sp"
             />
 
@@ -138,7 +140,8 @@
             android:paddingBottom="10dp"
             android:fontFamily="@font/simonetta"
             android:textColor="@color/white"
-            android:text="  Sign out"
+            android:drawablePadding="5dp"
+            android:text="Sign out"
             android:textSize="25sp"
             />
 
