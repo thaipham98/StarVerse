@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase;
 import com.example.starverse.Dao.HoroscopeDao;
 import com.example.starverse.Entities.Horoscope;
 
-@androidx.room.Database(entities = {Horoscope.class}, version = 19)
+@androidx.room.Database(entities = {Horoscope.class}, version = 25, exportSchema = true)
 public abstract class HoroscopeDatabase extends RoomDatabase {
 
     private static final String dbName = "starverse.db";

@@ -14,7 +14,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         database = getWritableDatabase();
     }
 
-    private static final int DATABASE_VERSION = 19;
+    private static final int DATABASE_VERSION = 25;
     private static final String DATABASE_NAME = "starverse.db";
     private static final String TABLE_NAME = "Credentials";
 

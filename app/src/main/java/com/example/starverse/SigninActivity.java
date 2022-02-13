@@ -51,6 +51,7 @@ public class SigninActivity extends AppCompatActivity {
                                 });
                             } else {
                                 System.out.println("got");
+                                openDashBoard(v);
 
 
 
@@ -65,5 +66,9 @@ public class SigninActivity extends AppCompatActivity {
 
     }
 
+    public void openDashBoard(View view) {
+        Intent i = new Intent(this, DashboardActivity.class);
+        startActivity(i);
+    }
 
 }

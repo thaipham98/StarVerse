@@ -54,7 +54,7 @@ public class SignupActivity extends AppCompatActivity {
                                     }
                                 });
                             } else {
-                                openProfilePage(v);
+                                openDashBoard(v);
                             }
                         }
                     }).start();
@@ -72,5 +72,12 @@ public class SignupActivity extends AppCompatActivity {
         Intent i = new Intent(this, CreateProfileActivity.class);
         startActivity(i);
     }
+
+    public void openDashBoard(View view) {
+        Intent i = new Intent(this, DashboardActivity.class);
+        startActivity(i);
+    }
+
+
 
 }

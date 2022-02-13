@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/giath/AndroidStudioProjects/StarVerse/app/src/main/res/layout/activity_dashboard.xml" value="0.21354166666666666" />
         <entry key="..\:/Users/giath/AndroidStudioProjects/StarVerse/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/giath/AndroidStudioProjects/StarVerse/app/src/main/res/layout/activity_profile.xml" value="0.18795289855072464" />
+        <entry key="..\:/Users/giath/AndroidStudioProjects/StarVerse/app/src/main/res/layout/activity_signin.xml" value="0.19655521783181357" />
+        <entry key="..\:/Users/giath/AndroidStudioProjects/StarVerse/app/src/main/res/layout/activity_signup.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/giath/AndroidStudioProjects/StarVerse/app/src/main/res/layout/fragment_dashboard.xml" value="0.18795289855072464" />
+        <entry key="..\:/Users/giath/AndroidStudioProjects/StarVerse/app/src/main/res/layout/item_koloda.xml" value="0.18795289855072464" />
         <entry key="..\:/Users/giath/AndroidStudioProjects/StarVerse2/app/src/main/res/layout/activity_main.xml" value="0.40217391304347827" />
         <entry key="app/src/main/res/drawable/circle.xml" value="0.1095" />
         <entry key="app/src/main/res/drawable/ic_icon_search.xml" value="0.105" />
@@ -28,8 +34,6 @@
         <entry key="app/src/main/res/layout/item_koloda.xml" value="0.16875" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.2453125" />
         <entry key="app/src/main/res/menu/options_menu.xml" value="0.21875" />
-        <entry key="app/src/main/res/layout/activity_signin.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.1" />
       </map>
     </option>
   </component>
