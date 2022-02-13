@@ -57,7 +57,7 @@ public class SignupActivity extends AppCompatActivity {
                                 });
                             } else {
 
-                                openDashBoard(v);
+                                openCreateProfilePage(v);
                             }
                             myRoomDB.close();
                         }
@@ -67,18 +67,10 @@ public class SignupActivity extends AppCompatActivity {
         });
     }
 
-    public void openProfilePage(View view) {
-        Intent i = new Intent(this, ProfileActivity.class);
-        startActivity(i);
-    }
+
 
     public void openCreateProfilePage(View view) {
         Intent i = new Intent(this, CreateProfileActivity.class);
-        startActivity(i);
-    }
-
-    public void openDashBoard(View view) {
-        Intent i = new Intent(this, DashboardActivity.class);
         startActivity(i);
     }
 }

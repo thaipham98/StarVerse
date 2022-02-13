@@ -8,13 +8,16 @@ import androidx.room.RoomDatabase;
 
 import com.example.starverse.Dao.CredentialDao;
 import com.example.starverse.Dao.HoroscopeDao;
+import com.example.starverse.Dao.UserDao;
 import com.example.starverse.Entities.Credential;
 import com.example.starverse.Entities.Horoscope;
+import com.example.starverse.Entities.User;
 
 @Database(
         entities = {
                 Credential.class,
-                Horoscope.class
+                Horoscope.class,
+                User.class
         },
         version = 1
 )
@@ -35,4 +38,5 @@ public abstract class MyRoomDB extends RoomDatabase {
 
     public abstract HoroscopeDao horoscopeDao();
     public abstract CredentialDao credentialDao();
+    public abstract UserDao userDao();
 }
