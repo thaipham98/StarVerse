@@ -5,7 +5,7 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "User")
+//
 public class User {
     public User(String info, Gender genderInterest, Preference preference, Integer from_age, Integer to_age) {
         this.info = info;

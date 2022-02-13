@@ -22,9 +22,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        DatabaseHandler databaseHandler = new DatabaseHandler(getApplicationContext());
+        //DatabaseHandler databaseHandler = new DatabaseHandler(getApplicationContext());
 
-        DOB = findViewById(R.id.main_datePicker1);
+        DOB = (DatePicker) findViewById(R.id.main_datePicker1);
+        DOB.init(2011, 8, 2, null);
         start_button = findViewById(R.id.start);
 
         start_button.setOnClickListener(new View.OnClickListener() {

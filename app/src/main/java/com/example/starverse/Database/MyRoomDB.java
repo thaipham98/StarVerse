@@ -16,8 +16,8 @@ import com.example.starverse.Entities.User;
 @Database(
         entities = {
                 Credential.class,
-                Horoscope.class,
-                User.class
+                Horoscope.class
+                //User.class
         },
         version = 1
 )
@@ -38,5 +38,5 @@ public abstract class MyRoomDB extends RoomDatabase {
 
     public abstract HoroscopeDao horoscopeDao();
     public abstract CredentialDao credentialDao();
-    public abstract UserDao userDao();
+    //public abstract UserDao userDao();
 }

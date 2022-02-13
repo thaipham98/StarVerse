@@ -22,14 +22,16 @@
         <entry key="app/src/main/res/drawable/rounded_transparent_edittext.xml" value="0.105" />
         <entry key="app/src/main/res/font/font.xml" value="0.2512820512820513" />
         <entry key="app/src/main/res/layout/activity_create_profile.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_create_profile2.xml" value="0.2033514492753623" />
         <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.2033514492753623" />
         <entry key="app/src/main/res/layout/activity_dob.xml" value="0.225" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.19240966796874998" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.21" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.225" />
         <entry key="app/src/main/res/layout/activity_signin.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.25" />
         <entry key="app/src/main/res/layout/bottm_navigation_layout.xml" value="0.178125" />
         <entry key="app/src/main/res/layout/bottom_navigation.xml" value="0.2033514492753623" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.16875" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2033514492753623" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.2033514492753623" />
         <entry key="app/src/main/res/layout/item_koloda.xml" value="0.16875" />

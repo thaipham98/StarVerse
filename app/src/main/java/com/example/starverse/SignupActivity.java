@@ -56,7 +56,6 @@ public class SignupActivity extends AppCompatActivity {
                                     }
                                 });
                             } else {
-
                                 openCreateProfilePage(v);
                             }
                             myRoomDB.close();

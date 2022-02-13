@@ -24,36 +24,29 @@ public class CreateProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_profile);
 
-
-
-
+        matching = findViewById(R.id.match);
         matching.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                final String interestText = "";
-                final String preferenceText= "";
-                final String fromAgeText = "";
-                final String toAgeText = "";
-                final String aboutMeText = "";
+//                final String interestText = "a";
+//                final String preferenceText= "a";
+//                final String fromAgeText = "a";
+//                final String toAgeText = "a";
+//                final String aboutMeText = "a";
 
-                if (interestText.isEmpty() || preferenceText.isEmpty() || fromAgeText.isEmpty() || toAgeText.isEmpty() || aboutMeText.isEmpty()) {
-                    Toast.makeText(getApplicationContext(), "Fill all Fields", Toast.LENGTH_SHORT).show();
-                } else {
-//                    MyRoomDB myRoomDB = MyRoomDB.getMyRoomDB(getApplicationContext());
+                //                    MyRoomDB myRoomDB = MyRoomDB.getMyRoomDB(getApplicationContext());
 //                    final UserDao userDao = myRoomDB.userDao();
-                    new Thread(new Runnable() {
-                        @Override
-                        public void run() {
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
 
 //                            User user = new User(aboutMeText, interestText, preferenceText, fromAgeText, toAgeText);
 //                            userDao.signUp(user);
 //                            user = userDao.findUser()
-                            openDashBoard(view);
-                        }
-                    }).start();
-
-                }
+                        openDashBoard(view);
+                    }
+                }).start();
 
             }
         });
@@ -64,5 +57,4 @@ public class CreateProfileActivity extends AppCompatActivity {
         Intent i = new Intent(this, DashboardActivity.class);
         startActivity(i);
     }
-
 }
