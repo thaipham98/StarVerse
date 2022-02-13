@@ -26,6 +26,42 @@
         />
 
     <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_button_black"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Chat match"
+            android:onClick="openChathubPage"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Chat"
+            android:onClick="openChatRegPage" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_centerHorizontal="true"

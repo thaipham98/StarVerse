@@ -24,8 +24,8 @@ public class ChatMatchActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void openMyProfilePage(View view) {
-        Intent i = new Intent(this, MyProfileActivity.class);
+    public void openChatRegPage(View view){
+        Intent i = new Intent(this, ChatActivity.class);
         startActivity(i);
     }
 }
