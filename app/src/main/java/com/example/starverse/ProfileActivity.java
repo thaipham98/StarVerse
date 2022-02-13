@@ -8,12 +8,12 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
-public class ZodiacActivity extends AppCompatActivity {
+public class ProfileActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_zodiac);
+        setContentView(R.layout.activity_profile);
         TextView profile_text_description = findViewById(R.id.profile_text_description);
         profile_text_description.setMovementMethod(new ScrollingMovementMethod());
     }

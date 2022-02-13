@@ -114,6 +114,7 @@
                     android:orientation="vertical">
 
                     <RadioButton
+                        android:id="@+id/radio_gender_f"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="0dp"
@@ -124,7 +125,7 @@
                         android:textSize="18dp" />
 
                     <RadioButton
-                        android:id="@+id/radio_pirates"
+                        android:id="@+id/radio_gender_m"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="-10dp"
@@ -160,6 +161,7 @@
                     android:orientation="vertical">
 
                     <RadioButton
+                        android:id="@+id/radio_activity_hangout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="0dp"
@@ -170,6 +172,7 @@
                         android:textSize="18dp" />
 
                     <RadioButton
+                        android:id="@+id/radio_activity_date"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="-10dp"
