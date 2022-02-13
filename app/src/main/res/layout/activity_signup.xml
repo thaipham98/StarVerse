@@ -91,6 +91,7 @@
             android:layout_alignParentEnd="true"
             android:background="@drawable/rounded_edittext"
             android:text="Sign up"
+            android:textAllCaps="false"
             android:textSize="15dp"
             android:onClick="openCreateProfilePage"
             />
